@@ -29,7 +29,7 @@ app.use("/products", ProductsRoutes);
 
 // GET /=
 app.use((req , res) => {
-    res.status(404).json({
+    res.json({
         message: "this page not found",
         status: 404
     })
